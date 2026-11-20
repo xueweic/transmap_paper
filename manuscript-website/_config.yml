@@ -1,0 +1,18 @@
+title: TransMap manuscript resources
+author: Xuewei Cao
+exclude_patterns:
+  - templates/**
+  - data/**
+
+execute:
+  execute_notebooks: "off"
+
+repository:
+  url: https://github.com/xueweic/transmap_manuscript
+  path_to_book: ""
+  branch: main
+
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: false

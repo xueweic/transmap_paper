@@ -1,0 +1,43 @@
+name: Publish manuscript book manually
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Confirm that notebook outputs and linked files are ready for a public Pages site
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: transmap-manuscript-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ inputs.publish == true }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: manuscript-website/requirements.txt
+      - run: python -m pip install -r manuscript-website/requirements.txt
+      - name: Build book without executing notebooks
+        run: jupyter-book build . --config manuscript-website/_config.yml --toc manuscript-website/_toc.yml
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _build/html
+      - id: deployment
+        uses: actions/deploy-pages@v5
