@@ -1,4 +1,3 @@
-# Supplementary data
+# Supplementary Data
 
-Notebooks and scripts used to construct distributable supplementary data will
-be listed here.
+Numerical results underlying the figures are provided in the `data` folder of each figure.

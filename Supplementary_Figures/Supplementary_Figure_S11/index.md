@@ -1,3 +1,5 @@
 # Supplementary Figure S11
 
-Panel notebooks and reviewed inputs for Supplementary Figure S11 will be added here.
+Analysis and results for Supplementary Figure S11.
+
+- `data` folder includes all numerical results for generating Supplementary Figure S11.

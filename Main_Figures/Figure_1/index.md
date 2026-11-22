@@ -1,3 +1,7 @@
 # Figure 1
 
-Panel notebooks and reviewed inputs for Figure 1 will be added here.
+Analysis and results for Figure 1.
+
+- `data` folder includes all numerical results for generating Figure 1.
+
+Panel 1a is a schematic. Panels 1c–1f are not included yet.

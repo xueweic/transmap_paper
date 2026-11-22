@@ -1,3 +1,5 @@
 # Figure 4
 
-Panel notebooks and reviewed inputs for Figure 4 will be added here.
+Analysis and results for Figure 4.
+
+- `data` folder includes all numerical results for generating Figure 4.

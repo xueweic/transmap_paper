@@ -15,7 +15,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: transmap-manuscript-pages
+  group: transmap-paper-pages
   cancel-in-progress: false
 
 jobs:

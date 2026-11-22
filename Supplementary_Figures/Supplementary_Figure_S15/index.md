@@ -1,3 +1,5 @@
 # Supplementary Figure S15
 
-Panel notebooks and reviewed inputs for Supplementary Figure S15 will be added here.
+Analysis and results for Supplementary Figure S15.
+
+- `data` folder includes all numerical results for generating Supplementary Figure S15.

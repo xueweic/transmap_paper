@@ -1,3 +1,3 @@
-# Supplementary tables
+# Supplementary Tables
 
-Notebooks and scripts used to construct supplementary tables will be listed here.
+Supplementary tables are provided with the manuscript.
