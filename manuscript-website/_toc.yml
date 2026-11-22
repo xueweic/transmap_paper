@@ -5,6 +5,9 @@ format: jb-book
 root: README
 chapters:
   - file: Simulation_Studies/index
+    sections:
+      - file: Simulation_Studies/local_program
+      - file: Simulation_Studies/global_program
 
   - file: Data_Applications/index
 
@@ -44,6 +47,7 @@ chapters:
           - file: Main_Figures/Figure_5/Figure_5b
           - file: Main_Figures/Figure_5/Figure_5c
           - file: Main_Figures/Figure_5/Figure_5f
+          - file: Main_Figures/Figure_5/Figure_5g
       - file: Main_Figures/Figure_6/index
         sections:
           - file: Main_Figures/Figure_6/Figure_6a
