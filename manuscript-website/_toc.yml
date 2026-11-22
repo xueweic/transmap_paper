@@ -49,6 +49,7 @@ chapters:
           - file: Main_Figures/Figure_6/Figure_6a
           - file: Main_Figures/Figure_6/Figure_6b
           - file: Main_Figures/Figure_6/Figure_6c
+          - file: Main_Figures/Figure_6/Figure_6d
       - file: Main_Figures/Figure_7/index
         sections:
           - file: Main_Figures/Figure_7/Figure_7a
