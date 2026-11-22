@@ -1,5 +1,7 @@
+# Book settings
 title: TransMap manuscript resources
-author: Xuewei Cao
+author: Xuewei Cao with input from Gao Wang and Kushal K. Dey
+copyright: "2026"  # Current year
 exclude_patterns:
   - templates/**
   - data/**
@@ -7,12 +9,25 @@ exclude_patterns:
 execute:
   execute_notebooks: "off"
 
+latex:
+  latex_documents:
+    targetname: book.tex
+
+bibtex_bibfiles:
+  - manuscript-website/references.bib
+
 repository:
-  url: https://github.com/xueweic/transmap_manuscript
+  url: https://github.com/xueweic/transmap_paper
   path_to_book: ""
   branch: main
 
 html:
-  use_repository_button: true
   use_issues_button: true
-  use_edit_page_button: false
+  use_repository_button: true
+  use_edit_page_button: true
+
+# Add navigation depth configuration to show one level expanded by default
+sphinx:
+  config:
+    html_theme_options:
+      show_navbar_depth: 2

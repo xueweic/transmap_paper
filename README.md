@@ -1,50 +1,47 @@
-# TransMap manuscript resources
+# TransMap Manuscript Resources
 
-Code, notebooks, and shareable inputs for reproducing the TransMap manuscript's
-figures and analyses. This repository is being assembled; the figure pages are
-placeholders until their corresponding analyses and inputs have been reviewed.
-The method implementation belongs in the companion R package,
-[`transmap`](https://github.com/xueweic/transmap).
+Code and data to reproduce figures in TransMap manuscript.
 
-## Repository layout
 
-| Path | Purpose |
-| --- | --- |
-| `Main_Figures/Figure_1/` through `Figure_7/` | Notebooks and files for each main figure. |
-| `Supplementary_Figures/` | Supplementary figure notebooks, grouped by figure. |
-| `Simulation_Studies/` | Simulation design, execution, and result summaries. |
-| `Data_Applications/` | Real-data analyses and downstream validation. |
-| `Supplementary_Tables/`, `Supplementary_Data/` | Table and data-generation analyses. |
-| `data/manifest.tsv` | Provenance and access information for distributable inputs. |
-| `templates/` | Starting point for a figure notebook. |
-| `manuscript-website/` | Jupyter Book configuration and table of contents. |
+## About TransMap
 
-Add a notebook to its figure or analysis directory, use paths relative to the
-repository root, and record the input files, software versions, random seeds,
-and output panels in the notebook. Add each notebook to
-`manuscript-website/_toc.yml` when it is ready to appear in the book. The book
-build does **not** execute notebooks; stored outputs remain visible when present.
+TransMap is a generalizable computational framework that combines multi-scale *trans*-QTL mapping with multi-phenotype genetic colocalization to improve the discovery and interpretation of distal regulatory variants. Beyond individual *trans*-eGenes (TransMap-eGene), TransMap constructs local co-regulatory program phenotypes that account for background expression variation (TransMap-local) and genome-wide coordinated programs (TransMap-global), improving the detection of weak, coordinated distal genetic effects. Applied to bulk and single-nucleus transcriptomic profiles and proteomic, glycoproteomic and metabolomic biomarkers from the aging human brain, TransMap provides a multi-scale, cell-type-resolved map of *trans*-regulatory variation.
 
-Only include `.rds` files that can be redistributed. Record each in
-`data/manifest.tsv`, including its source, access terms, and checksum. Store
-restricted donor-level data, credentials, and unreviewed inputs outside this
-repository. Large files can instead be deposited in an appropriate repository
-and referenced from the manifest; do not assume GitHub is suitable for every
-dataset.
+## Repository Structure
 
-## Build the book locally
+This repository contains the codes and data used to generate figures from our manuscript, available at: https://github.com/xueweic/transmap_paper
 
-Jupyter Book 1 is used to retain the `_config.yml` and `_toc.yml` structure of
-the ColocBoost paper repository.
+- **Simulation Studies**: This directory contains simulation designs and implementation codes used in the paper.
 
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r manuscript-website/requirements.txt
-.venv/bin/jupyter-book build . --config manuscript-website/_config.yml --toc manuscript-website/_toc.yml
-```
+- **Data Applications**: This section contains the data applications discussed in the TransMap paper.
 
-The HTML output is written to `_build/html/`. GitHub Actions checks that the
-book builds, but publishing is a separate, manually confirmed workflow. The
-Pages source must also be configured in repository settings before that
-workflow can deploy. **A GitHub Pages site may be public even if this repository
-is private**, so review notebook outputs and linked files before publishing.
+- **Main Figures**: Each notebook is fully executable and documented to ensure reproducibility of our results.
+
+- **Supplementary Figures**: Each notebook is fully executable and documented to ensure reproducibility of our results shown in Supplementary Figures.
+
+Each figure folder contains one notebook per panel and a `data` folder with the plot-ready numerical results (`*.rds`) read by that notebook. Only summary-level results are included; no individual-level data. Provenance and checksums of every `*.rds` file are listed in `data/manifest.tsv`.
+
+
+## Getting Started
+
+To navigate this resource, use the table of contents in the left sidebar. Each figure section contains interactive notebooks that allow you to:
+
+1. View the code used to generate analyses
+2. Examine data associated with the figures
+3. Reproduce visualizations
+
+## Computational Requirements
+
+The analyses in this book were performed using:
+- R version 4.4 or higher
+- Key R packages: ggplot2, patchwork, ggrepel, scales, ComplexUpset, ggtext, ggalluvial
+
+## TransMap Tutorial Website
+
+The TransMap R package is available at [https://github.com/xueweic/transmap](https://github.com/xueweic/transmap), with documentation at [https://xueweic.github.io/transmap/](https://xueweic.github.io/transmap/).
+
+## Citation
+
+If you use TransMap in your research, please cite:
+
+> Cao X, Wang Y, Sun H, Feng R, Zhang H, Li Y, Lee H, Karaahmet B, Li B, Gersbach C, Crawford G, Taga M, Beeri MS, Buchman AS, Klein HU, de Jager PL, Bennett D, The Alzheimer's Disease Functional Genomics Consortium, Wang G, Dey KK. (2026+). A multi-scale cell-type resolved map of *trans*-regulatory architecture in the aging human brain. medRxiv. [https://doi.org/10.64898/2026.11.05.26367384](https://doi.org/10.64898/2026.11.05.26367384)

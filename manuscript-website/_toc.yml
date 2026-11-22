@@ -1,34 +1,147 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
 format: jb-book
-root: index
+root: README
 chapters:
+  - file: Simulation_Studies/index
+
+  - file: Data_Applications/index
+
   - file: Main_Figures/index
     sections:
       - file: Main_Figures/Figure_1/index
+        sections:
+          - file: Main_Figures/Figure_1/Figure_1b
       - file: Main_Figures/Figure_2/index
+        sections:
+          - file: Main_Figures/Figure_2/Figure_2b
+          - file: Main_Figures/Figure_2/Figure_2c
+          - file: Main_Figures/Figure_2/Figure_2d
+          - file: Main_Figures/Figure_2/Figure_2e
       - file: Main_Figures/Figure_3/index
+        sections:
+          - file: Main_Figures/Figure_3/Figure_3a
+          - file: Main_Figures/Figure_3/Figure_3c
+          - file: Main_Figures/Figure_3/Figure_3d
       - file: Main_Figures/Figure_4/index
+        sections:
+          - file: Main_Figures/Figure_4/Figure_4a
+          - file: Main_Figures/Figure_4/Figure_4b
+          - file: Main_Figures/Figure_4/Figure_4c
+          - file: Main_Figures/Figure_4/Figure_4d
+          - file: Main_Figures/Figure_4/Figure_4e
+          - file: Main_Figures/Figure_4/Figure_4f
+          - file: Main_Figures/Figure_4/Figure_4g
       - file: Main_Figures/Figure_5/index
+        sections:
+          - file: Main_Figures/Figure_5/Figure_5a
+          - file: Main_Figures/Figure_5/Figure_5b
+          - file: Main_Figures/Figure_5/Figure_5c
+          - file: Main_Figures/Figure_5/Figure_5f
       - file: Main_Figures/Figure_6/index
+        sections:
+          - file: Main_Figures/Figure_6/Figure_6a
+          - file: Main_Figures/Figure_6/Figure_6c
       - file: Main_Figures/Figure_7/index
+        sections:
+          - file: Main_Figures/Figure_7/Figure_7a
+          - file: Main_Figures/Figure_7/Figure_7b
+          - file: Main_Figures/Figure_7/Figure_7c
+          - file: Main_Figures/Figure_7/Figure_7d
+          - file: Main_Figures/Figure_7/Figure_7f
+          - file: Main_Figures/Figure_7/Figure_7g
+          - file: Main_Figures/Figure_7/Figure_7h
+
   - file: Supplementary_Figures/index
     sections:
       - file: Supplementary_Figures/Supplementary_Figure_S1/index
       - file: Supplementary_Figures/Supplementary_Figure_S2/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S2/Figure_S2a
+          - file: Supplementary_Figures/Supplementary_Figure_S2/Figure_S2d
+          - file: Supplementary_Figures/Supplementary_Figure_S2/Figure_S2e
       - file: Supplementary_Figures/Supplementary_Figure_S3/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S3/Figure_S3a
+          - file: Supplementary_Figures/Supplementary_Figure_S3/Figure_S3b
+          - file: Supplementary_Figures/Supplementary_Figure_S3/Figure_S3d
       - file: Supplementary_Figures/Supplementary_Figure_S4/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S4/Figure_S4a
+          - file: Supplementary_Figures/Supplementary_Figure_S4/Figure_S4b
       - file: Supplementary_Figures/Supplementary_Figure_S5/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S5/Figure_S5a
+          - file: Supplementary_Figures/Supplementary_Figure_S5/Figure_S5b
+          - file: Supplementary_Figures/Supplementary_Figure_S5/Figure_S5c
+          - file: Supplementary_Figures/Supplementary_Figure_S5/Figure_S5d
+          - file: Supplementary_Figures/Supplementary_Figure_S5/Figure_S5e
       - file: Supplementary_Figures/Supplementary_Figure_S6/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S6/Figure_S6a
+          - file: Supplementary_Figures/Supplementary_Figure_S6/Figure_S6b
+          - file: Supplementary_Figures/Supplementary_Figure_S6/Figure_S6c
+          - file: Supplementary_Figures/Supplementary_Figure_S6/Figure_S6d
+          - file: Supplementary_Figures/Supplementary_Figure_S6/Figure_S6e
       - file: Supplementary_Figures/Supplementary_Figure_S7/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S7/Figure_S7a
+          - file: Supplementary_Figures/Supplementary_Figure_S7/Figure_S7d
+          - file: Supplementary_Figures/Supplementary_Figure_S7/Figure_S7e
+          - file: Supplementary_Figures/Supplementary_Figure_S7/Figure_S7f
       - file: Supplementary_Figures/Supplementary_Figure_S8/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S8/Figure_S8a
+          - file: Supplementary_Figures/Supplementary_Figure_S8/Figure_S8b
+          - file: Supplementary_Figures/Supplementary_Figure_S8/Figure_S8c
+          - file: Supplementary_Figures/Supplementary_Figure_S8/Figure_S8d
       - file: Supplementary_Figures/Supplementary_Figure_S9/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9a
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9b
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9c
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9d
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9e
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9f
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9g
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9h
+          - file: Supplementary_Figures/Supplementary_Figure_S9/Figure_S9i
       - file: Supplementary_Figures/Supplementary_Figure_S10/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S10/Figure_S10a
+          - file: Supplementary_Figures/Supplementary_Figure_S10/Figure_S10d
+          - file: Supplementary_Figures/Supplementary_Figure_S10/Figure_S10e
       - file: Supplementary_Figures/Supplementary_Figure_S11/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S11/Figure_S11a
+          - file: Supplementary_Figures/Supplementary_Figure_S11/Figure_S11b
+          - file: Supplementary_Figures/Supplementary_Figure_S11/Figure_S11c
+          - file: Supplementary_Figures/Supplementary_Figure_S11/Figure_S11d
       - file: Supplementary_Figures/Supplementary_Figure_S12/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S12/Figure_S12a
+          - file: Supplementary_Figures/Supplementary_Figure_S12/Figure_S12b
+          - file: Supplementary_Figures/Supplementary_Figure_S12/Figure_S12c
+          - file: Supplementary_Figures/Supplementary_Figure_S12/Figure_S12d
+          - file: Supplementary_Figures/Supplementary_Figure_S12/Figure_S12e
       - file: Supplementary_Figures/Supplementary_Figure_S13/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S13/Figure_S13a
+          - file: Supplementary_Figures/Supplementary_Figure_S13/Figure_S13b
+          - file: Supplementary_Figures/Supplementary_Figure_S13/Figure_S13c
       - file: Supplementary_Figures/Supplementary_Figure_S14/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S14/Figure_S14a
+          - file: Supplementary_Figures/Supplementary_Figure_S14/Figure_S14b
+          - file: Supplementary_Figures/Supplementary_Figure_S14/Figure_S14c
+          - file: Supplementary_Figures/Supplementary_Figure_S14/Figure_S14d
+          - file: Supplementary_Figures/Supplementary_Figure_S14/Figure_S14e
       - file: Supplementary_Figures/Supplementary_Figure_S15/index
-  - file: Simulation_Studies/index
-  - file: Data_Applications/index
+        sections:
+          - file: Supplementary_Figures/Supplementary_Figure_S15/Figure_S15a
+          - file: Supplementary_Figures/Supplementary_Figure_S15/Figure_S15bc
+
   - file: Supplementary_Tables/index
+
   - file: Supplementary_Data/index
-  - file: README
