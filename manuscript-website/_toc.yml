@@ -13,6 +13,7 @@ chapters:
       - file: Main_Figures/Figure_1/index
         sections:
           - file: Main_Figures/Figure_1/Figure_1b
+          - file: Main_Figures/Figure_1/Figure_1d
       - file: Main_Figures/Figure_2/index
         sections:
           - file: Main_Figures/Figure_2/Figure_2b
@@ -42,6 +43,7 @@ chapters:
       - file: Main_Figures/Figure_6/index
         sections:
           - file: Main_Figures/Figure_6/Figure_6a
+          - file: Main_Figures/Figure_6/Figure_6b
           - file: Main_Figures/Figure_6/Figure_6c
       - file: Main_Figures/Figure_7/index
         sections:
