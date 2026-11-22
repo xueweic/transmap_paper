@@ -23,6 +23,7 @@ chapters:
       - file: Main_Figures/Figure_3/index
         sections:
           - file: Main_Figures/Figure_3/Figure_3a
+          - file: Main_Figures/Figure_3/Figure_3b
           - file: Main_Figures/Figure_3/Figure_3c
           - file: Main_Figures/Figure_3/Figure_3d
       - file: Main_Figures/Figure_4/index
