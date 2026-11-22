@@ -4,7 +4,7 @@ Two simulation studies benchmarked the distinct tasks addressed by TransMap. The
 
 ## Local program study
 
-Programs varied in size, the fraction of affected genes, residual expression correlation, genetic effect magnitude and direction, and sample size. TransMap-local was compared with TransPCO, a first-PC eigengene and individual-gene *trans*-eQTL testing. [Figure 1d](../Main_Figures/Figure_1/Figure_1d.ipynb) contains the matched 72-setting comparison with TransPCO. The Figure 1c source data are being reconciled with the manuscript panel and are not yet published here.
+Programs varied in size, the fraction of affected genes, residual expression correlation, genetic effect magnitude and direction, and sample size. TransMap-local was compared with TransPCO, a first-PC eigengene and individual-gene *trans*-eQTL testing. [Figure 1d](../Main_Figures/Figure_1/Figure_1d.ipynb) contains the matched 72-setting comparison with TransPCO. A separately labeled [Figure 1c MOCK layout preview](../Main_Figures/Figure_1/Figure_1c_MOCK.ipynb) uses synthetic bars and is **not an analysis result**; a genuine Figure 1c is not yet published here.
 
 ## Global program study
 
