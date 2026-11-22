@@ -61,7 +61,7 @@ The manuscript Methods describe a broader design with module sizes $M\in\{20,50,
 | Variants $Q$ | 1, 2, or 3, drawn per dataset | Independent module-associated variants |
 | Replicates | 1,000 per plotted condition | Independent simulated datasets |
 
-The number of variants follows empirical weights proportional to 13,665, 1,680, and 565 for $Q=1,2,3$, respectively (85.9%, 10.6%, and 3.6% after rounding). These weights were used as a simulation-design prior on multiplicity; they do not imply that the simulated genes reproduce an observed joint molecular architecture. The Figure 1c MOCK and Figure 1d RDS objects distributed here are restricted to $M=20$ and $n=1,000$.
+The number of variants follows empirical weights proportional to 13,665, 1,680, and 565 for $Q=1,2,3$, respectively (85.9%, 10.6%, and 3.6% after rounding). These weights were used as a simulation-design prior on multiplicity; they do not imply that the simulated genes reproduce an observed joint molecular architecture. The Figure 1c preview and Figure 1d RDS objects distributed here are restricted to $M=20$ and $n=1,000$.
 
 ## Methods and endpoints
 
@@ -73,6 +73,6 @@ $$
 \widehat R=\frac{1}{R}\sum_{r=1}^{R}\left(\frac{1}{Q_r}\sum_{a=1}^{Q_r}I_{ra}\right).
 $$
 
-This is power when the simulated variants are active and a per-tested-variant false-positive rate under the null. It is **not** the probability of detecting at least one of the $Q_r$ variants, nor a family-wise error rate. The Figure 1c/1d panels use $\alpha=0.05$; the source simulation also records results at $10^{-5}$, which should not be substituted for the plotted threshold. The Figure 1d [notebook](../Main_Figures/Figure_1/Figure_1d.ipynb) compares *TransMap-local* and TransPCO across 72 plotted settings. The separate [Figure 1c MOCK notebook](../Main_Figures/Figure_1/Figure_1c_MOCK.ipynb) is a layout preview with synthetic values; it cannot be used to assess any method.
+This is power when the simulated variants are active and a per-tested-variant false-positive rate under the null. It is **not** the probability of detecting at least one of the $Q_r$ variants, nor a family-wise error rate. The Figure 1c/1d panels use $\alpha=0.05$; the source simulation also records results at $10^{-5}$, which should not be substituted for the plotted threshold. The Figure 1d [notebook](../Main_Figures/Figure_1/Figure_1d.ipynb) compares *TransMap-local* and TransPCO across 72 plotted settings. The separate [Figure 1c notebook](../Main_Figures/Figure_1/Figure_1c.ipynb) is a layout preview with synthetic values; it cannot be used to assess any method.
 
 For $Q>1$, intervals in the underlying simulation summaries account for the fact that tested variants from the same dataset share a replicate. The plotted RDS files contain summarized rates rather than replicate-level outcomes, so those intervals cannot be independently recomputed from this repository alone.

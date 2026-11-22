@@ -16,7 +16,7 @@ chapters:
       - file: Main_Figures/Figure_1/index
         sections:
           - file: Main_Figures/Figure_1/Figure_1b
-          - file: Main_Figures/Figure_1/Figure_1c_MOCK
+          - file: Main_Figures/Figure_1/Figure_1c
           - file: Main_Figures/Figure_1/Figure_1d
           - file: Main_Figures/Figure_1/Figure_1e
           - file: Main_Figures/Figure_1/Figure_1f
