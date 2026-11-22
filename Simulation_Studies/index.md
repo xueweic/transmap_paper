@@ -1,8 +1,14 @@
 # Simulation Studies
 
-This directory contains simulation designs and implementation codes used in the paper.
+Two simulation studies benchmarked the distinct tasks addressed by TransMap. The local study evaluated discovery of a *trans*-QTL for a specified gene program. The global study evaluated recovery of the variant-gene pairs underlying a directed, multilayer regulatory network. The notebooks contain plot-ready results rather than the full simulation runs.
 
-Plot-ready simulation results are provided with the corresponding figures: TransMap-local and TransMap-global benchmarking in **Supplementary Figures S2–S3**.
+## Local program study
+
+Programs varied in size, the fraction of affected genes, residual expression correlation, genetic effect magnitude and direction, and sample size. TransMap-local was compared with TransPCO, a first-PC eigengene and individual-gene *trans*-eQTL testing. [Figure 1d](../Main_Figures/Figure_1/Figure_1d.ipynb) contains the matched 72-setting comparison with TransPCO. The Figure 1c source data are being reconciled with the manuscript panel and are not yet published here.
+
+## Global program study
+
+A directed network linked 40 *trans*-active variants to nine distal genes through proximal mediators and successive gene layers; 20 additional variants had no *trans* effect. Recovery was evaluated against 160 true variant-gene pairs. [Figure 1e](../Main_Figures/Figure_1/Figure_1e.ipynb) shows the network and truth matrix, and [Figure 1f](../Main_Figures/Figure_1/Figure_1f.ipynb) shows precision-recall curves for TransMap-global and ARCHIE across three effect levels. The corresponding RDS files contain only data needed to draw these panels.
 
 ## References
 

@@ -14,6 +14,8 @@ chapters:
         sections:
           - file: Main_Figures/Figure_1/Figure_1b
           - file: Main_Figures/Figure_1/Figure_1d
+          - file: Main_Figures/Figure_1/Figure_1e
+          - file: Main_Figures/Figure_1/Figure_1f
       - file: Main_Figures/Figure_2/index
         sections:
           - file: Main_Figures/Figure_2/Figure_2b
